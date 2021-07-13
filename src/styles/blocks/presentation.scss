@@ -1,0 +1,50 @@
+.presentation {
+  position: relative;
+
+  &__wraper {
+    position: relative;
+    width: 100%;
+    max-height: 590px;
+  }
+
+  &__video {
+    position: relative;
+    width: 100%;
+    max-height: 590px;
+    object-fit: cover;
+  }
+
+  &__play {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    height: 230px;
+    width: 230px;
+    border: 1px solid $border-play-color;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+
+    &::before {
+      content: "PLAY";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      font-size: 24px;
+      color: $border-play-color;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:hover::before {
+      content: url("../images/play.png");
+    }
+  }
+}

@@ -1,0 +1,110 @@
+.features {
+  position: relative;
+  z-index: -2;
+  background: url(../images/bacground.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 80% 80%;
+  
+  @include respond(phone) {
+    background-size: cover;
+  }
+
+  &__wrap {
+    @extend %container;
+  }
+
+  &__container {
+    @include respond(phone) {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+  
+  &__title-article {
+    color: $color-green;
+    margin-bottom: 40px;
+    @include respond(tab-port) {
+      margin-bottom: 30px;
+    }
+    @include respond(phone) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__box {
+    max-width: 350px;
+
+    &--1 {
+      position: relative;
+      left: 40%;
+      @include respond(phone) {
+        left: 0;
+      }
+    }
+
+    &--2 {
+      position: relative;
+      left: 10%;
+      margin-bottom: 100px;
+
+      @include respond(tab-land) {
+        margin-bottom: 70px;
+      }
+
+      @include respond(tab-port) {
+        margin-bottom: 50px;
+      }
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+
+    &--3 {
+      position: relative;
+      left: 30%;
+      transform: translateY(20px);
+
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
+
+  &__item {
+    margin-bottom: 13px;
+    font-size: 16px;
+    list-style: none;
+    background: url(../images/bullet.svg) no-repeat left center;
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    right: 120px;
+    z-index: -1;
+
+    @include respond(tab-land) {
+      right: 40px;
+    }
+
+    @include respond(tab-port) {
+      right: 30px;
+    }
+    
+    @include respond(phone) {
+      position: relative;
+      right: 0;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.main {
+  &__benefit {
+    margin-bottom: 150px;
+  
+    @include respond(phone) {
+      margin-bottom: 90px;
+    }
+  }
+  
+  &__presentation {
+    margin-bottom: 150px;
+  
+    @include respond(phone) {
+      margin-bottom: 90px;
+    }
+  }
+  
+  &__about-us {
+    margin-bottom: 150px;
+    @include respond(phone) {
+      margin-bottom: 50px;
+    }
+  }
+  
+  &__technology {
+    margin-bottom: 60px;
+  }
+  
+  &__testimonials {
+    margin-bottom: 150px;
+    @include respond(phone) {
+      margin-bottom: 45px;
+    }
+  }
+  
+  &__features {
+    margin-bottom: 130px;
+  
+    @include respond(phone) {
+      margin-bottom: 45px;
+    }
+  }
+  
+  &__question {
+    margin-bottom: 115px;
+  }
+}

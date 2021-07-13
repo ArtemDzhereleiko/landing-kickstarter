@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+.page {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  background: $color_bg;
+  color: $color-black;
+}
