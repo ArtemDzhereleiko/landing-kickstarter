@@ -1,4 +1,15 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%container {
+  padding: 0 120px;
+
+  @include respond(tab-land) {
+    padding: 0 40px;
+  }
+
+  @include respond(tab-port) {
+    padding: 0 30px;
+  }
+
+  @include respond(big-desktop) {
+    padding: 0 150px;
+  }
 }
